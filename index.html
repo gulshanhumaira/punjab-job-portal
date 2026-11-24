@@ -63,10 +63,18 @@
         <section class="container bg-success">
             <div class="navbar navbar-dark bg-success">
 
-                <button class="col d-inline bg-light">looking for.....</button>
+                <input type="text" class="col d-inline bg-light" placeholder="looking for.....">
 
-                <button class="col d-inline bg-light ">departments</button>
-                <button class="col d-inline bg-light  ">locations</button>
+                <select name="departments" id="" class="col d-inline bg-light">
+                    <option value="">Select Department</option>
+                    <option value="dept1">Department 1</option>
+                    <option value="dept2">Department 2</option>
+                </select>
+                <select name="locations" id="" class="col d-inline bg-light">
+                    <option value="">Select Location</option>
+                    <option value="loc1">Location 1</option>
+                    <option value="loc2">Location 2</option>
+                </select>
                 <button type="submit" class="col d-inline bg-light "><svg xmlns="http://www.w3.org/2000/svg" width="16"
                         height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                         <path
@@ -81,14 +89,14 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    
+                    <div class="card-body">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-person-check-fill " viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
                         <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
                     </svg>
-                    <div class="card-body">
-
                         <h5 class="card-title">Professional Identification</h5>
                         <p class="card-text">Professional Identification
                             Create your online resume and make it available to Government Departments.</p>
@@ -127,68 +135,162 @@
         </div>
     </div>
     <!-- ============cards section ends here======== -->
-     <!-- =============table section starts here========== -->
-     <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">
-Department</th>
-      <th scope="col">Job Title</th>
-      <th scope="col">	Project</th>
-      <th scope="col">	Province</th>
-        <th scope="col">	Last Apply Date</th>
-      <th scope="col"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-     
-      <td>Punjab Industrial Estates Development And Management Company</td>
-        <td>Horticulture Officer</td>
-      <td>Site Office</td>
-      <td>	PUNJAB</td>
-    </tr>
-    <tr>
-      
-      <td>Punjab Industrial Estates Development And Management Company</td>
-       <td>John</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>John</td>
-      <td>Doe</td>
-      <td>@social</td>
-    </tr>
-    <tr>
-      <td>John</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-     <td>John</td>
-      <td>John</td>
-      <td>Doe</td>
-      <td>@social</td>
-    </tr>
-     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>John</td>
-      <td>Doe</td>
-      <td>@social</td>
-    </tr>
-  </tbody>
-</table>
+    <!-- =============table section starts here========== -->
+    <table class="container table border p-3 mb-2">
+        <h1 class="text-center">jobs</h1>
+        <thead>
+            <tr style="background-color: rgb(167, 165, 165);">
+                <th scope="col">
+                    Department</th>
+                <th scope="col">Job Title</th>
+                <th scope="col"> Project</th>
+                <th scope="col"> Province</th>
+                <th scope="col"> Last Apply Date</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="job">
 
-       <!-- =============table section ends here========== -->
+                <td>Punjab Land Record Authority</td>
+                <td>GIS Manager</td>
+                <td>Site Office</td>
+                <td> PUNJAB</td>
+                <td> 02-Dec-2026</td>
+                <td><a href="https://jobs.punjab.gov.pk/new_recruit/job_detail/documentation-assistant-17"
+                        class="btn btn-primary details-btn">View Details</a></td>
+            </tr>
+            <tr class="job">
+
+                <td>Punjab Land Record Authority</td>
+                <td>Driver</td>
+                <td> Project Implementation Unit - PLRA</td>
+                <td>PUNJAB</td>
+                <td>02-Dec-2026</td>
+                <td><a href="https://jobs.punjab.gov.pk/new_recruit/job_detail/fisheries-supervisor-2"
+                        class="btn btn-primary">View Details</a></td>
+            </tr>
+            <tr class="job">
+                <td scope="row">Punjab Land Record Authority</td>
+                <td>Contract Manager</td>
+                <td> Project Management Unit - BOR</td>
+                <td>PUNJAB</td>
+                <td> 02-Dec-2026</td>
+                <td><a href="https://jobs.punjab.gov.pk/new_recruit/job_detail/lab-technician-5"
+                        class="btn btn-primary">View Details</a></td>
+            </tr>
+            <tr class="job">
+                <td>Punjab Land Record Authority</td>
+                <td>Operations Team (Office Assistant)</td>
+                <td>Project Implementation Unit - PLRAn</td>
+                <td>PUNJAB</td>
+                <td>02-Dec-2026</td>
+                <td><a href="https://jobs.punjab.gov.pk/new_recruit/job_detail/driver-97" class="btn btn-primary">View
+                        Details</a></td>
+            </tr>
+            <tr class="job">
+                <td>Punjab Land Record Authority</td>
+                <td>Quality Assurance Analyst</td>
+                <td>Project Management Unit - BOR</td>
+                <td>PUNJAB</td>
+                <td>02-Dec-2026</td>
+                <td><a href="https://jobs.punjab.gov.pk/new_recruit/job_detail/quality-assurance-analyst-12"
+                        class="btn btn-primary">View Details</a></td>
+            </tr>
+            <tr class="job">
+                <td></td> 
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://jobs.punjab.gov.pk/new_recruit/jobs" class=" text-success">See All Jobs</a></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- =============table section ends here========== -->
+    <!-- ===========footer section starts here========== -->
+
+    <footer class="footer-style text-body-secondary py-5 mt-auto border-top">
+        <div class="container footer-style">
+            <div class="row g-4">
+                <!-- Brand / About Column -->
+                <div class="col-12 col-md-4">
+                    <h1>
+                        <pre class="text-white fw-bold">
+            punjab
+            jobs
+            online</pre>
+                    </h1>
+                </div>
+                <!-- ============site map============= -->
+                <div class="col-6 col-md-2">
+                    <h6 class="text-white fw-semibold">site map</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 "><a href="https://jobs.punjab.gov.pk/home"
+                                class="nav-link p-0 text-body-secondary text-white">Home</a></li>
+                        <li class="nav-item mb-2 "><a href="https://jobs.punjab.gov.pk/new_recruit/jobs"
+                                class="nav-link p-0 text-body-secondary text-white">jobs</a></li>
+                        <li class="nav-item mb-2 "><a href="https://jobs.punjab.gov.pk/new_recruit/faq"
+                                class="nav-link p-0 text-body-secondary text-white">FAQ's</a></li>
+                        <li class="nav-item mb-2 "><a href="https://jobs.punjab.gov.pk/departmental/contacts"
+                                class="nav-link p-0 text-body-secondary text-white">Departmental Contacts</a></li>
+                    </ul>
+                </div>
+
+                <!-- ============career centers=============-->
+                <div class="col-6 col-md-2">
+                    <h6 class="text-white fw-semibold">career centers</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://jobs.punjab.gov.pk/pdf/InterviewGuides.pdf"
+                                class="nav-link p-0 text-body-secondary text-white">Interview Guides</a></li>
+                        <li class="nav-item mb-2"><a href="https://jobs.punjab.gov.pk/pdf/JobSearchGuides.pdf"
+                                class="nav-link p-0 text-body-secondary text-white">Job Search Guides</a></li>
+                        <li class="nav-item mb-2"><a href="https://jobs.punjab.gov.pk/pdf/CareerDevelopment.pdf"
+                                class="nav-link p-0 text-body-secondary text-white">Career Development</a></li>
+                        <li class="nav-item mb-2"><a href="https://jobs.punjab.gov.pk/pdf/CareerNews.pdf"
+                                class="nav-link p-0 text-body-secondary text-white">Career News</a></li>
+                    </ul>
+                </div>
+                <!-- ============contacts============= -->
+                <div class="col-12 col-md-4">
+                    <h6 class="text-white  fw-semibold">contact us</h6>
+                    <a href="https://www.facebook.com/PunjabJobOnline/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-facebook text-primary" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg></a>
+                    <a href="https://x.com/punjabjobonline">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-twitter text-primary" viewBox="0 0 16 16" style="padding-left: 10px;">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                        </svg></a>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-telephone text-white" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            <span style="color: aliceblue;">+92 42 99000000 Ext:1222</span>
+                        </svg>
+                    </div>
+                    <div>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-envelope text-white" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+                        <a style="color: aliceblue;"
+                            href=" jobsonlinesupport@punjab.gov.pk">jobsonlinesupport@punjab.gov.pk</a>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+
+    <!-- ===========footer section ends here========== -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

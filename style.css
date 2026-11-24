@@ -13,3 +13,42 @@ color: gray;
 background-color: rgb(151, 245, 166);
 
 }
+.footer-style
+{
+background-color: #4d5863;
+}
+.bi bi-facebook:hover
+{
+color:aliceblue;
+background-color:white;
+
+}
+.bi bi-twitter
+{
+    padding-left: 10px;
+}
+.email
+{]color: white;}
+.job
+{
+    background-color: #f8f9fa;
+}
+.job:hover
+{
+    background-color: #d6d7d8;
+}
+.nav-item
+{
+
+}
+.nav-item:hover
+{
+   text-decoration: underline;
+   color:white; 
+}
+
+.details-btn {
+    border-radius: 20px !important;
+    padding: 5px 15px;
+    text-decoration: none;
+}
